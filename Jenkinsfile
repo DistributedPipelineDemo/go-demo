@@ -8,7 +8,7 @@ pipeline {
   agent {
     //we need Docker Compose in many of the sh steps
     //we want to use Docker-in-Docker (DIND) to isolate Docker Compose images, containers, networks from other running jobs
-    label "dind-compose"
+    label "dnd-compose"
   }
   environment {
     //these will be used throughout the Pipeline
